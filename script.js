@@ -26,13 +26,13 @@ const loadFile = (e) => {
 fileInput.addEventListener("change", loadFile);
 uploadBox.addEventListener("click", () => fileInput.click());
 
-widthInput.addEventListener("change", () => 
+widthInput.addEventListener("input", () => 
 {
     const height = ratioInput.checked ? widthInput.value / ogImageRatio : heightInput.value;
     heightInput.value = Math.floor(height);
 });
 
-heightInput.addEventListener("change", () => {
+heightInput.addEventListener("input", () => {
     const width = ratioInput.checked ? heightInput.value * ogImageRatio : widthInput.value;
     widthInput.value = Math.floor(width);
 });
