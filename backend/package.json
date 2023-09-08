@@ -1,0 +1,17 @@
+{
+  "name": "remove-bg-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rembg-node": "^2.0.1",
+    "sharp": "^0.30.7"
+  }
+}
